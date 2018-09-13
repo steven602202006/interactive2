@@ -1,0 +1,279 @@
+body {
+	background: #cccccc;
+}
+
+.stage {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+	z-index: -2;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid yellow;
+	position: absolute;
+	top: 203px;
+	left: 60px;
+}
+
+#vase {
+   display:block;
+   width: 150px;
+   height: 160px;
+   top: 203px;
+   left: 270px;
+   background-color: red;
+   -webkit-border-radius: 72px 72px 72px 72px / 72px 72px 72px 72px;
+   border-radius:         70%  70%  40%  40%  / 50%  50%   85%  85%;
+   position: absolute;
+}
+
+#vasebtm {
+   display:block;
+   width: 130px;
+   height: 70px;
+   top: 295px;
+   left: 280px;
+   background-color: darkred;
+   position: absolute;
+   z-index: 1;
+   border-bottom-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   border-radius:         70%  70%  40%  40%  / 50%  50%   85%  85%;
+}
+
+#vaselid {
+	width: 25px;
+	height: 25px;
+	background: red;
+	top: 194px;
+	left: 330px;
+	border-radius: 5px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#vaseshadow {
+	width: 130px;
+	height: 30px;
+	background: black;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	top: 345px;
+   left: 280px;
+   position: absolute;
+   opacity: 0.5;
+   z-index: -1;
+   filter: blur(4px);
+}
+
+#head {
+	width: 0;
+	height: 0;
+	border-top: 100px solid #FAA35F;
+	border-right: 100px solid transparent;
+	border-style: solid;
+	border-width: 2.5px 0 4.5px 25px;
+	border-color: transparent transparent transparent #faa25f;
+	top: 300px;
+   	left: 630px;
+   	position: absolute;
+   	transform: rotate(15deg);
+}
+
+#neck {
+	width: 0;
+	height: 0;
+	border-top: 100px solid #FAA35F;
+	border-right: 100px solid transparent;
+	border-style: solid;
+	border-width: 0 10px 60px 10px;
+	border-color: transparent transparent #faa25f transparent;
+	top: 297px;
+   	left: 620px;
+   	position: absolute;
+   	transform: rotate(7deg);
+   	z-index: -2;
+}
+
+#tail {
+	width: 0;
+	height: 0;
+	border-top: 100px solid #FAA35F;
+	border-right: 100px solid transparent;
+	border-style: solid;
+	border-width: 0 10px 75px 10px;
+	border-color: transparent transparent #faa25f transparent;
+	top: 270px;
+   	left: 580px;
+   	position: absolute;
+   	transform: rotate(-5deg);
+   	z-index: -1;
+}
+
+#bodytop {
+	border-bottom: 100px solid #FDBB88;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	top: 280px;
+   	left: 517px;
+	height: 0;
+	width: 50px;
+	position: absolute;
+	-webkit-transform: scale(0.25, 0.20) rotate(7deg);
+}
+
+#bodybtm {
+	border-bottom: 100px solid #E3A87A;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	top: 300px;
+   	left: 510px;
+	height: 0;
+	width: 100px;
+	position: absolute;
+	-webkit-transform: scale(0.25, 0.20) rotate(185deg);
+	z-index: -1;
+}
+
+#wing {
+	width: 0;
+	height: 0;
+	border-top: 100px solid #FAA35F;
+	border-right: 100px solid transparent;
+	border-style: solid;
+	border-width: 280px 200px 0 20px;
+	border-color: #F7CFB0 transparent transparent transparent;
+	top: 210px;
+   	left: 495px;
+   	position: absolute;
+   	transform: rotate(10deg) scale(0.20, 0.15);
+}
+
+#origamishadow {
+	width: 75px;
+	height: 15px;
+	background: black;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	top: 350px;
+   	left: 575px;
+  	position: absolute;
+   	opacity: 0.5;
+   	z-index: -3;
+   	filter: blur(4px);
+}
+
+#desk {
+	border-bottom: 100px solid #C72722;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 500px;
+	top: 300px;
+	left: 200px;
+	position: absolute;
+	z-index: -3;
+	-webkit-clip-path: polygon(4% 1%, 81% 1%, 100% 100%, 0% 100%);
+	clip-path: polygon(4% 1%, 81% 1%, 100% 100%, 0% 100%);
+}
+
+#circle {
+	width: 150px;
+	height: 150px;
+	background: orange;
+	border-radius: 150px;
+	top: 203px;
+	left: 480px;
+	position: absolute;
+}
+
+#egg {
+   display:block;
+   width: 45px;
+   height: 50px;
+   top: 325px;
+   left: 450px;
+   background-color: orange;
+   -webkit-border-radius: 172px 72px 72px 72px / 72px 72px 72px 72px;
+   border-radius:         45%  45%  45%  45%  / 40%   40%   40%  40%;
+   position: absolute;
+}
+
+#eggshadow {
+	width: 50px;
+	height: 30px;
+	background: black;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	top: 355px;
+   	left: 447px;
+  	position: absolute;
+   	opacity: 0.5;
+   	z-index: -1;
+   	filter: blur(4px);
+}
+
+#root {
+	width: 10px;
+	height: 200px;
+	background: #92D16E;
+	top: 0px;
+	left: 337px;
+	position: absolute;
+	z-index: -2;
+}
+
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
