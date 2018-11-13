@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>文字時鐘 Word Clock</title>
+
+<script language="Javascript">
+<!--
+function timedRefresh(timeoutPeriod) {
+setTimeout("location.reload(true);",timeoutPeriod); //auto refresh every 5 second
+}
+function number(x) { 
+if (x==1) return "壹 點<br>One"; if (x==2) return "貳 點<br>Two"; if (x==3) return "叁 點<br>Three"; 
+if (x==4) return "肆 點<br>Four"; if (x==5) return "伍 點<br>Five"; if (x==6) return "陸 點<br>Six"; 
+if (x==7) return "柒 點<br>Seven"; if (x==8) return "捌 點<br>Eight"; if (x==9) return "玖 點<br>Nine"; 
+if (x==10) return "拾 點<br>Ten"; if (x==11) return "拾壹 點<br>Eleven"; if (x==12) return "拾貳 點<br>12"; 
+return x; //default 
+} 
+function ttime(h,m) {
+h = number(h)
+if (m<=1 || m>59) return h+" o'clock";
+if (m<=1) return "壹 分<br>One" + "<br>" +y +h;
+if (m<=2) return "貳 分<br>Two" + "<br>" +y +h;
+if (m<=3) return "叁 分<br>Three" + "<br>" +y +h;
+if (m<=4) return "肆 分<br>Four" + "<br>" +y +h;
+if (m<=5) return "伍 分<br>Five" + "<br>" +y +h;
+if (m<=6) return "陸 分<br>Six" + "<br>" +y +h;
+if (m<=7) return "柒 分<br>Seven" + "<br>" +y +h;
+if (m<=8) return "捌 分<br>Eight" + "<br>" +y +h;
+if (m<=9) return "玖 分<br>Nine" + "<br>" +y +h;
+
+if (m<=10) return "拾 分<br>Ten" + "<br>" +y +h;
+if (m<=11) return "拾壹 分<br>Eleven" + "<br>" +y +h;
+if (m<=12) return "拾貳 分<br>Twelve" + "<br>" +y +h;
+if (m<=13) return "拾叁 分<br>Thirteen" + "<br>" +y +h;
+if (m<=14) return "拾肆 分<br>Fourteen" + "<br>" +y +h;
+if (m<=15) return "壹刻<br>Quarter" + "<br>" +y +h;
+if (m<=16) return "拾陸 分<br>Sixteen" + "<br>" +y +h;
+if (m<=17) return "拾柒 分<br>Seventeen" + "<br>" +y +h;
+if (m<=18) return "拾捌 分<br>Eighteen" + "<br>" +y +h;
+if (m<=19) return "拾玖 分<br>Nineteen" + "<br>" +y +h;
+
+if (m<=20) return "貳拾 分<br>Twenty" + "<br>" +y +h; 
+if (m<=21) return "貳拾壹 分<br>Twenty One" + "<br>" +y +h; 
+if (m<=22) return "貳拾貳 分<br>Twenty Two" + "<br>" +y +h; 
+if (m<=23) return "貳拾叁 分<br>Twenty Three" + "<br>" +y +h; 
+if (m<=24) return "貳拾肆 分<br>Twenty Four" + "<br>" +y +h; 
+if (m<=25) return "貳拾伍 分<br>Twenty Five" + "<br>" +y +h; 
+if (m<=26) return "貳拾陸 分<br>Twenty Six" + "<br>" +y +h; 
+if (m<=27) return "貳拾柒 分<br>Twenty Seven" + "<br>" +y +h; 
+if (m<=28) return "貳拾捌 分<br>Twenty Eight" + "<br>" +y +h; 
+if (m<=29) return "貳拾玖 分<br>Twenty Nine" + "<br>" +y +h; 
+
+if (m<=30) return "半 Half"+ "<br>" +y +h;
+if (m<=31) return "叁拾壹 分<br>Thirty One"+ "<br>" +y +h;
+if (m<=32) return "叁拾貳 分<br>Thirty Two"+ "<br>" +y +h;
+if (m<=33) return "叁拾参 分<br>Thirty Three"+ "<br>" +y +h;
+if (m<=34) return "叁拾肆 分<br>Thirty Four"+ "<br>" +y +h;
+if (m<=35) return "叁拾伍 分<br>Thirty Five"+ "<br>" +y +h;
+if (m<=36) return "叁拾陸 分<br>Thirty Six"+ "<br>" +y +h;
+if (m<=37) return "叁拾柒 分<br>Thirty Seven"+ "<br>" +y +h;
+if (m<=38) return "叁拾捌 分<br>Thirty Eight"+ "<br>" +y +h;
+if (m<=39) return "叁拾玖 分<br>Thirty Nine"+ "<br>" +y +h;
+
+if (m<=40) return "肆拾 分<br>Fourty" + "<br>" +y +h;
+if (m<=41) return "肆拾壹 分<br>Fourty One" + "<br>" +y +h;
+if (m<=42) return "肆拾貳 分<br>Fourty Two" + "<br>" +y +h;
+if (m<=43) return "肆拾叁 分<br>Fourty Three" + "<br>" +y +h;
+if (m<=44) return "肆拾肆 分<br>Fourty Four" + "<br>" +y +h;
+if (m<=45) return "肆拾伍 分<br>Fourty Five" + "<br>" +y +h;
+if (m<=46) return "肆拾陸 分<br>Fourty Six" + "<br>" +y +h;
+if (m<=47) return "肆拾柒 分<br>Fourty Seven" + "<br>" +y +h;
+if (m<=48) return "肆拾捌 分<br>Fourty Eight" + "<br>" +y +h;
+if (m<=49) return "肆拾玖 分<br>Fourty Nine" + "<br>" +y +h;
+
+if (m<=50) return "伍拾 分<br>Fifty" + "<br>" +y +h;
+if (m<=51) return "伍拾壹 分<br>Fifty One" + "<br>" +y +h;
+if (m<=52) return "伍拾貳 分<br>Fifty Two" + "<br>" +y +h;
+if (m<=53) return "伍拾叁 分<br>Fifty Three" + "<br>" +y +h;
+if (m<=54) return "伍拾肆 分<br>Fifty Four" + "<br>" +y +h;
+if (m<=55) return "伍拾伍 分<br>Fifty Five" + "<br>" +y +h;
+if (m<=56) return "伍拾陸 分<br>Fifty Six" + "<br>" +y +h;
+if (m<=57) return "伍拾柒 分<br>Fifty Seven" + "<br>" +y +h;
+if (m<=58) return "伍拾捌 分<br>Fifty Eight" + "<br>" +y +h;
+if (m<=59) return "伍拾玖 分<br>Fifty Nine" + "<br>" +y +h;
+
+return "h:m"; // never reached? 
+} 
+function daytime(h) {
+if (!h || h>21) return "<br>" + "晚上 PM"
+if (h<12) return "<br>" + "早上 AM";
+if (h<=17) return "<br>" + "下午 PM";
+return "<br>" + "晚上 PM"; // default 
+}
+
+function past_to(m) {
+if (!m || m>30) return "past<br>"
+return "past<br>"; // default 
+}
+
+function words(h,m) { 
+if (!h && !m) { // if no time supplied, use the system time
+time = new Date() 
+h = time.getHours()
+m = time.getMinutes() 
+} 
+y = past_to(m);
+z = daytime(h);
+h = h % 12 // fix to 12 hour clock 
+if (h>12) h = 1 // the clock turns round..
+if (h==0) h = 12 
+return "" +ttime(h,m)+z
+}
+
+</script>
+</head> 
+<body onload="JavaScript:timedRefresh(5000);"> 
+<body style="background-color: black;">
+<center>
+
+<span style="font-family:STFangsong; font-weight:bold; color:blue; font-size:100px">
+<span style="font-family:BiauKai; font-size:150px; text-shadow: 0 0 3vw #F40A35; animation: neon 1s ease infinite;-moz-animation: neon 1s ease infinite;-webkit-animation: neon 1s ease infinite">
+<script language="JavaScript">document.write(words().fontcolor("#FB4264"))
+
+</script>
+
+<style>
+	@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+</style>
+
+</center>
+</body> 
