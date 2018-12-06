@@ -1,0 +1,199 @@
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+a:hover {
+    color: #DE2910;
+}
+
+body {
+width: 1280px;
+height: 720px;
+cursor: pointer;
+}
+
+#quote {
+  margin-left: -10px;
+}
+
+#T1 {
+font-family: Lantinghei SC;
+font-size: 45px;
+font-weight: bold;
+left: 25px;
+top:-30px;
+position: relative;
+}
+
+#CT1 {
+font-family: Lantinghei SC;
+font-size: 45px;
+font-weight: bold;
+left: 25px;
+top:-30px;
+position: relative;
+}
+
+#C1 {
+    font-family: Lantinghei SC;
+    font-size: 65px;
+    font-weight: bold;
+    transform: rotate(90deg);
+    top: 0px;
+    left: 1420px;
+    position: fixed;
+    width: 800px;
+    transform-origin: top left;
+    cursor: pointer;
+}
+
+#C2 {
+font-family: Lantinghei SC;
+font-size: 60px;
+font-weight: bold;
+transform: rotate(90deg);
+top: 550px;
+left: 530px;
+position: fixed;
+}
+
+#E1 {
+font-family: Lantinghei SC;
+font-size: 90px;
+font-weight: bold;
+left: 30px;
+top:-25px;
+position: fixed;
+cursor: pointer;
+}
+
+#E2 {
+font-family: Lantinghei SC;
+font-size: 48px;
+font-weight: bold;
+left: 28px;
+top: 470px;
+position: fixed;
+}
+
+#E2:hover {
+    color: #DE2910;
+}
+
+#Q {
+font-family: Lantinghei SC;
+border: 1px solid transparent;    
+width: 47%;
+font-size: 25px;
+color: black;
+left: 20px;
+top: 260px;
+position: relative;
+font-style: italic;
+font-weight: 700;
+line-height: 1.6;
+}
+
+#Intro {
+font-family: Lantinghei SC;
+border: 1px solid transparent;    
+width: 45%;
+font-size: 15px;
+color: black;
+left: 20px;
+top: 320px;
+position: relative;
+line-height: 2;
+font-weight: 700;
+text-align: justify;
+}
+
+#MIntro {
+font-family: Lantinghei SC;
+border: 1px solid transparent;    
+width: 47%;
+font-size: 15px;
+color: black;
+left: 700px;
+top: 150px;
+position: relative;
+line-height: 2;
+font-weight: 700;
+text-align: justify;
+}
+
+#C1:hover {
+    color: #DE2910;
+}
+
+#chinese {
+  display: none;
+}
+
+body.chinese-text #chinese{
+  display: block;
+}
+
+body.chinese-text #english{
+  display: none;
+}
+
+
+body.chinese-text img{
+  filter: blur(10px);
+}
+
+#E1:hover {
+    color: #DE2910;
+}
+
+body.english-text #english{
+  display: block;
+}
+
+body.english-text #chinese{
+  display: none;
+}
+
+
+body.english-text img{
+  filter: blur(0px);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted transparent;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 700px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: Lantinghei SC;
+    font-size: 40px;
+
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#SFMOMA{
+    background:none;
+}
+
+#SFMOMA:hover{
+    background:#00b1b6;
+    filter: invert(1);
+}
