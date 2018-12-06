@@ -11,7 +11,6 @@ a:hover {
 body {
 width: 1280px;
 height: 720px;
-cursor: pointer;
 }
 
 #quote {
@@ -29,11 +28,13 @@ position: relative;
 
 #CT1 {
 font-family: Lantinghei SC;
-font-size: 45px;
+font-size: 60px;
 font-weight: bold;
-left: 25px;
-top:-30px;
 position: relative;
+ transform: rotate(90deg);
+    top: -100px;
+    left: 1340px;
+    transform-origin: top left;
 }
 
 #C1 {
@@ -47,6 +48,7 @@ position: relative;
     width: 800px;
     transform-origin: top left;
     cursor: pointer;
+    z-index: 1;
 }
 
 #C2 {
@@ -57,6 +59,7 @@ transform: rotate(90deg);
 top: 550px;
 left: 530px;
 position: fixed;
+z-index: 1;
 }
 
 #E1 {
@@ -67,6 +70,7 @@ left: 30px;
 top:-25px;
 position: fixed;
 cursor: pointer;
+z-index: 1;
 }
 
 #E2 {
@@ -76,6 +80,7 @@ font-weight: bold;
 left: 28px;
 top: 470px;
 position: fixed;
+z-index: 1;
 }
 
 #E2:hover {
@@ -196,4 +201,10 @@ body.english-text img{
 #SFMOMA:hover{
     background:#00b1b6;
     filter: invert(1);
+}
+
+#tail
+{
+  font-family: Lantinghei SC;
+position: absolute;
 }
