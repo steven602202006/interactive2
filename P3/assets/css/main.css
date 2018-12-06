@@ -11,6 +11,7 @@ a:hover {
 body {
 width: 1280px;
 height: 720px;
+cursor: url(http://cur.cursors-4u.net/others/oth-6/oth638.cur), auto;
 }
 
 #quote {
@@ -24,6 +25,7 @@ font-weight: bold;
 left: 25px;
 top:-30px;
 position: relative;
+cursor: s-resize;
 }
 
 #CT1 {
@@ -31,10 +33,11 @@ font-family: Lantinghei SC;
 font-size: 60px;
 font-weight: bold;
 position: relative;
- transform: rotate(90deg);
-    top: -100px;
-    left: 1340px;
-    transform-origin: top left;
+transform: rotate(90deg);
+top: -100px;
+left: 1340px;
+transform-origin: top left;
+cursor: w-resize;
 }
 
 #C1 {
@@ -205,6 +208,33 @@ body.english-text img{
 
 #tail
 {
-  font-family: Lantinghei SC;
+font-family: Lantinghei SC;
 position: absolute;
+}
+
+.tooltip2 {
+    position: fixed;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    z-index: 1;
+}
+
+.tooltip2 .tooltiptext {
+    visibility: hidden;
+    width: 700px;
+    background-color: white;
+    top: 200px;
+    left: 30px;
+    color: black;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: Lantinghei SC;
+    font-size: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+.tooltip2:hover .tooltiptext {
+    visibility: visible;
 }
