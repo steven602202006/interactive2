@@ -50,7 +50,7 @@ cursor: w-resize;
     position: fixed;
     width: 800px;
     transform-origin: top left;
-    cursor: pointer;
+    cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), auto;
     z-index: 1;
 }
 
@@ -63,6 +63,7 @@ top: 550px;
 left: 530px;
 position: fixed;
 z-index: 1;
+cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), auto;
 }
 
 #E1 {
@@ -72,7 +73,7 @@ font-weight: bold;
 left: 30px;
 top:-25px;
 position: fixed;
-cursor: pointer;
+cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), auto;
 z-index: 1;
 }
 
@@ -84,6 +85,7 @@ left: 28px;
 top: 470px;
 position: fixed;
 z-index: 1;
+cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), auto;
 }
 
 #E2:hover {
