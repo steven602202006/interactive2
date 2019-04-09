@@ -12,7 +12,7 @@ $(document).ready(function(){
     var winHeight = $(window).height();
 
     $('body').click(function(){
-        var n = Math.floor(Math.random() * 25) + 1;
+        var n = Math.floor(Math.random() * 26) + 1;
         var xPos = Math.floor(Math.random() * winWidth);
         var yPos = Math.floor(Math.random() * winHeight);
 
