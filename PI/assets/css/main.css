@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+a:hover {
+    color: #DE2910;
+}
+
+body {
+width: 1280px;
+height: 720px;
+cursor: url(http://cur.cursors-4u.net/others/oth-6/oth638.cur), auto;
+}
+
+#tail {
+font-family: Impact;
+position: absolute;
+font-size: 30px;
+right: 30px;
+}
+
+#T {
+font-family: Impact;
+font-size: 150px;
+top: -31px;
+position: absolute;
+}
+
+
+#IM {
+width: 30%;
+position: absolute;
+top: 90px;
+}
+
+#B {
+font-family: Arial;
+font-size: 20px;
+top: 170px;
+left: 30px;
+position: absolute;
+word-wrap: break-word;
+width: 700px;
+line-height: 1.8;
+}

@@ -1,0 +1,389 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family:abolition;
+	font-size: 167px;
+	text-align: center;
+}
+
+/* container */
+
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 250px;
+	width: 250px;
+	background: white;
+	color: #85A1B2;
+	margin: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left; 
+	transition: all 500ms ease; 
+
+	cursor: pointer;
+}
+
+/* example button 1 */
+#button-1{
+	background-color: transparent;
+}
+
+
+#button-1:hover {
+    color:#C084A0;
+	transform: rotate(360deg) ;
+
+}
+
+
+
+
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#button-1 {
+  -webkit-animation: rotating 1s linear infinite;
+  -moz-animation: rotating 1s linear infinite;
+  -ms-animation: rotating 1s linear infinite;
+  -o-animation: rotating 1s linear infinite;
+  animation: rotating 1s linear infinite;
+}
+
+/* example button 2 */
+
+#button-2:hover{
+	font-family: 'Cinzel', serif;
+}
+
+
+
+#button-4.gradient-background {
+  background: radial-gradient(#D2B1C4, #B1CED2, #B1B1D2);
+  color: white;
+  filter: blur(4px);
+}
+
+
+
+
+#button-5:hover {
+	background: #CDC4DC;
+	opacity: 100;
+	color: #A6D1DE;
+}
+
+/* example button 6 */
+#button-6{
+	background-color: transparent;
+	transition: none; 
+}
+
+#button-6:hover{
+color:orange;
+}
+
+
+#button-7:hover{
+  width: 250px;
+  font-size: 3px;
+  text-align: center;
+  border: 125px solid #7D6B7F;
+  animation: borderb 1s ease 1s 3 alternate forwards;
+}
+
+@keyframes borderb {
+  100% {
+    border-left: 10px solid #B4F2FE;
+    border-right:10px solid #F4C0DE;
+     border-top: 10px solid #F4C0C0;
+    border-bottom:10px solid #D3B1D9;
+  } 
+}
+
+#button-8:hover{
+filter: blur(3px);
+}
+
+#button-9:hover{
+filter: brightness(150%);
+}
+
+#button-10:hover{
+  color: orange;
+  animation: changecolor 3s ease 1s 1 forwards;
+}
+
+@keyframes changecolor {
+  50% {
+    color: #D77FB9;
+  }
+  100% {
+    color: #ECAAAA;
+  }}
+#button-11:hover{
+background-color: #C796A1;
+    transform: scale(7);
+    color: white;
+}
+
+
+#button-12:hover{
+filter: brightness(250%);
+
+}
+
+
+#button-13{
+  background-color: transparent;
+}
+
+#button-13:hover{
+filter: drop-shadow(15px 15px 8px #506572) blur(1px);
+
+}
+
+#button-14:hover {
+  color: white;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:#13AEB9; left:0px; top:0px;}
+    25%  {background-color:#A072AE; left:200px; top:0px;}
+    50%  {background-color:#AE7284; left:200px; top:200px;}
+    75%  {background-color:#F9BA3C; left:0px; top:200px;}
+    100% {background-color:#981F00; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:#13AEB9; left:0px; top:0px;}
+    25%  {background-color:#A072AE; left:200px; top:0px;}
+    50%  {background-color:#AE7284; left:200px; top:200px;}
+    75%  {background-color:#F9BA3C; left:0px; top:200px;}
+    100% {background-color:#981F00; left:0px; top:0px;}
+}
+
+
+
+#button-15:hover {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  font: 20px abolition;
+  color: white;
+  background: #A9DCE6;
+  border: 0px solid #A9DCE6;
+  animation: box 3s linear 1s 1 forwards;
+}
+
+@keyframes box {
+  50% {
+    border: 120px solid #E6A9C6;
+  } 
+}
+
+
+#button-16:hover {
+ transform: scale(2.5);
+ background-color: transparent;
+  animation: weight 3s ease 1s 3 alternate forwards;
+}
+
+@keyframes weight {
+  100% {
+    font-weight: 1000;
+  }
+}
+
+
+#button-17{
+font-size:167px;
+font-family: abolition;
+  color: #85A1B2;
+  text-align: center;
+}
+
+#button-17:hover{
+  caret-color: orange;
+  color: white;
+  background: #3B3B3B;
+  font-size: 7vw;
+  padding: 3vw;
+  animation: input 10s infinite;
+}
+
+@keyframes input {
+  50% {
+    caret-color: limegreen;
+  } }
+
+#button-18:hover{
+filter: blur(80px);
+}
+
+#button-19:hover{
+  color: red;
+}
+
+.rotation {
+  transform: rotate(360deg);
+  color:#FE6F01;
+}
+
+#button-20:hover{
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+@keyframes perspective {
+  100% {
+    perspective: 50px;
+  }
+}
+
+#button-21:hover{
+  color: #FEB304;
+  width: 250px;
+  text-align: center;
+  border: 40px solid #8D1515;
+  animation: boxshadow 2s ease 1s 3 alternate forwards;
+}
+
+@keyframes boxshadow {
+  100% {
+    border-bottom: 40px solid #1C5B04;
+    border-top: 40px solid #1C5B04;
+  } 
+}
+
+
+
+
+
+
+#button-22{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+#button-22:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+
+
+
+
+#button-23:hover {
+  color: orange;
+  font: 100 1em sans-serif;
+  animation: fontchange 3s ease 1s 3 alternate forwards;
+}
+
+@keyframes fontchange {
+  80% {
+    font: 100 3em san-serif;
+  }
+  100% {
+    font: 900 2em san-serif;
+  }
+}
+
+
+
+#button-24{
+background-color: transparent;
+}
+
+#button-24:hover{
+background-image: url('http://actunet.net/wp-content/uploads/2017/10/giphy-6.gif');
+color: #860F0F;
+animation: moveBbg 10s ease 1s 2 alternate none;
+}
+
+@keyframes moveBbg {
+  100% {
+    background-position: bottom top;
+  }
+}
+
+
+
+#button-25:hover{
+background-image: url('http://www.thome.com.sg/wp-content/uploads/2017/03/shutterstock_463996232-1-1024x662.jpg');
+color: white;
+animation: moveBg 10s ease 1s 2 alternate none;
+}
+
+@keyframes moveBg {
+  100% {
+    background-position: bottom right;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
